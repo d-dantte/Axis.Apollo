@@ -28,7 +28,7 @@ namespace Axis.Apollo.Json.Data
         {
             if (IsMinValue()) return DateTime.MinValue;
             else if (kind == DateTimeKind.Local) return new DateTime(year, month, day, hour, minute, second, millisecond, DateTimeKind.Local);
-            else return new DateTime(year, month, hour, minute, second, millisecond, DateTimeKind.Utc) - TimeSpan.FromMinutes(utcOffset);
+            else return new DateTime(year, month, day, hour, minute, second, millisecond, DateTimeKind.Utc) - TimeSpan.FromMinutes(utcOffset);
         }
 
         public JsonDateTime()

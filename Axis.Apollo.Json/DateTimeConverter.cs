@@ -9,6 +9,9 @@ namespace Axis.Apollo.Json
 {
     public class DateTimeConverter : JsonConverter
     {
+        /// <summary>
+        /// Indicates that the INCOMING time should be converted to UTC, using the utc offset in the incoming time: else ignore the utcOffset
+        /// </summary>
         public DateTimeKind DefaultDateTimeKind { get; set; } = DateTimeKind.Utc;
 
         public override bool CanConvert(Type objectType) => objectType == typeof(DateTime) || objectType == typeof(DateTime?);
