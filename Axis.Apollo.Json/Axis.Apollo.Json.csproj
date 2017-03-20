@@ -47,9 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\MomentDateTime.cs" />
-    <Compile Include="Data\TimeStamp.cs" />
-    <Compile Include="MomentJsDateConverter.cs" />
+    <Compile Include="Data\JsonDateTime.cs" />
+    <Compile Include="Data\JsonTimeStamp.cs" />
+    <Compile Include="DateTimeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimeStampConverter.cs" />
   </ItemGroup>

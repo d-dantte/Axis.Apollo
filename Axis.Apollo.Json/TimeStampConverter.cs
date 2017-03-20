@@ -8,15 +8,15 @@ using Axis.Luna.Extensions;
 namespace Axis.Apollo.Json
 {
 
-    public class CustomTimeSpanConverter : JsonConverter
+    public class TimeSpanConverter : JsonConverter
     {
-        public override bool CanConvert(Type objectType) => objectType == typeof(TimeSpan);
+        public override bool CanConvert(Type objectType) => objectType == typeof(TimeSpan) || objectType == typeof(TimeSpan?);
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-            => serializer.Deserialize<TimeSpanObject>(reader).TimeSpan();
+            => serializer.Deserialize<JsonTimeSpan>(reader)?.TimeSpan();
 
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
-            => JToken.FromObject(new TimeSpanObject(value.As<TimeSpan>())).WriteTo(writer);
+            => JToken.FromObject(value!= null? new JsonTimeSpan(value.As<TimeSpan>()) : null).WriteTo(writer);
     }
 }
