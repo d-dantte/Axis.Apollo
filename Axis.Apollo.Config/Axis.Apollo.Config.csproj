@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp2.1</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/d-dantte/Axis.Apollo</PackageProjectUrl>
+    <Company>Axiis</Company>
+    <Authors>Dantte</Authors>
+    <Product>Axis.Apollo</Product>
+  </PropertyGroup>
+
+</Project>

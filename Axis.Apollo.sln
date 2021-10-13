@@ -1,11 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axis.Apollo.Json", "Axis.Apollo.Json\Axis.Apollo.Json.csproj", "{CE2E5878-9D23-420E-AD50-B52E752036E7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D28BDE1-C544-4301-9B79-8CCB88A55D13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{0FCA0948-A26D-4311-BB58-D3D665E64DB2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{06795F9A-7573-407C-85BC-CEB95E781311}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Axis.Apollo.Config", "Axis.Apollo.Config\Axis.Apollo.Config.csproj", "{CDD325BB-F908-48E6-8066-4F19A02AEB71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".meta", ".meta", "{5A36FB09-FF63-4913-8F08-B2D7B632E33F}"
+	ProjectSection(SolutionItems) = preProject
+		Design.md = Design.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +20,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE2E5878-9D23-420E-AD50-B52E752036E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE2E5878-9D23-420E-AD50-B52E752036E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE2E5878-9D23-420E-AD50-B52E752036E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE2E5878-9D23-420E-AD50-B52E752036E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0FCA0948-A26D-4311-BB58-D3D665E64DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FCA0948-A26D-4311-BB58-D3D665E64DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FCA0948-A26D-4311-BB58-D3D665E64DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FCA0948-A26D-4311-BB58-D3D665E64DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD325BB-F908-48E6-8066-4F19A02AEB71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD325BB-F908-48E6-8066-4F19A02AEB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD325BB-F908-48E6-8066-4F19A02AEB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD325BB-F908-48E6-8066-4F19A02AEB71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CDD325BB-F908-48E6-8066-4F19A02AEB71} = {2D28BDE1-C544-4301-9B79-8CCB88A55D13}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38C2DD30-3F4B-45FF-AD44-EE2B59127976}
 	EndGlobalSection
 EndGlobal
